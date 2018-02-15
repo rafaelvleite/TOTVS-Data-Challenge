@@ -63,7 +63,7 @@ In the model flie **[tovs-challenge.py](tovs-challenge.py)** on this repository,
 
 ![real_sales forecast 2](https://user-images.githubusercontent.com/4992938/36238866-8a190524-11ec-11e8-8bc9-ce731f96c378.png)
 
-- As we can see in the image above, the forecasted sales amounts are close to the real weekday sales amount, so we can visually and intuitivelly validate this model.
+- As we can see in the image above, the forecasted sales amounts are close to the real weekday sales amounts, so we can visually and intuitivelly consider this model a valid approach.
 
 ### Conclusion for Part 3
 - The forecasted sales amount for the next week is highlighted below:
