@@ -2,7 +2,7 @@
 Data Challenge for job opportunity
 
 ## 1st step - Parse and Extract the data
-The given file **[sample.txt](sample.txt)** was opened in Tableau (before opening this dataset, I renamed it to **'sample 2.json'** to ease the Tableau Connect process). The Tableau file is **'TOTVS.twb'** on this repository.
+The given file **[sample.txt](sample.txt)** was opened in Tableau (before opening this dataset, I renamed it to **[sample 2.json](sample 2.json)** to ease the Tableau Connect process). The Tableau file is **'TOTVS.twb'** on this repository.
 
 Since the purpose of this challenge is identify pattern on how much a customer spend on the restaurant and also calculate a sales forecast for the following week, I cleaned the data so that I remain only with the main data below:
 
