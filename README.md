@@ -53,7 +53,23 @@ In the model flie **'tovs-challenge.py'** on this repository, I make this model.
 
 ![sales_forecats](https://user-images.githubusercontent.com/4992938/36238749-b90e8788-11eb-11e8-8d42-6480ba8bef73.jpg)
 
-###How amazing is that?###
+### How amazing is that?
+
+- From these results, I generated a new dataset back to Tableau, the given file 'solucao_tableau.csv' on this repository, by adding the forecasted data. By connecting this dataset in Tableau, I got this better visualization for the forecasts:
+
+![real_sales forecast](https://user-images.githubusercontent.com/4992938/36238841-50578a22-11ec-11e8-81db-b2effaa7c7a7.png)
+
+- In order to validate these forecasts, I grouped the sales data in 'Weekday Groups', and the result is below:
+
+![real_sales forecast 2](https://user-images.githubusercontent.com/4992938/36238866-8a190524-11ec-11e8-8bc9-ce731f96c378.png)
+
+- As we can see in the image above, the forecasted sales amounts are close to the real weekday sales amount, so we can visually and intuitivelly validate this model.
+
+### Conclusion for Part 3
+- The forecasted sales amount for the next week is highlighted below:
+
+![only_forecast_data](https://user-images.githubusercontent.com/4992938/36239027-c1edba48-11ed-11e8-8c82-1433b31dec8c.png)
+
 
 
 
