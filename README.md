@@ -35,3 +35,31 @@ So, I splited the **'real_sales.csv'** dataset into Train and Test datasets, in 
 
 Now we have the Train and Test datasets for our LSTM Network and we can move forward to our forecast model.
 
+In the model flie **'tovs-challenge.py'** on this repository, I make this model. Basically, these are the steps I took:
+
+- Imported the Training Set
+- Applied a Feature Scaling to standardize the features of data. 
+- Created a data structure with input of 7 timesteps (X_train) and output t+1 (y_train), so we could be "walking" with our model day by day. 
+- Reshaped the X_train in order to fit the Recurrent Neural Network
+- I builted the RNN, and optimized it with 300 units of LSTM in the input layer, compiled with 'RMSprop' optimizer, which is very suitable for RNN's, and used the loss function 'mean_squared_error', which showed the best results.
+- To fit the RNN to the Training Set, I used 'batch' of 1, because we want to predict values based on a Time Series, and 50 epochs that showed to be optimum to avoid Underfitting and OverFitting.
+- After the model was trained, I made the predictions and plotted the results to validate our model. You can see the result below, which is the prediction for the last 4 days of the sales data:
+
+![model_validation](https://user-images.githubusercontent.com/4992938/36238659-274eb80e-11eb-11e8-92c4-107c08d1ed5e.png)
+
+- As you can see, the model fits very well considering the low amount of data we have.
+- Now the the model was validated, I moved forward to the next step, which is the sales forecasts for the next week (6 days, monday through saturday)
+- I run the model and I got the plotted results below:
+
+![sales_forecats](https://user-images.githubusercontent.com/4992938/36238749-b90e8788-11eb-11e8-8d42-6480ba8bef73.jpg)
+
+###How amazing is that?###
+
+
+
+
+
+
+
+
+
