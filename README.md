@@ -55,7 +55,7 @@ In the model flie **'tovs-challenge.py'** on this repository, I make this model.
 
 ### How amazing is that?
 
-- From these results, I generated a new dataset back to Tableau, the given file 'solucao_tableau.csv' on this repository, by adding the forecasted data. By connecting this dataset in Tableau, I got this better visualization for the forecasts:
+- From these results, I generated a new dataset back to Tableau, the given file **'solucao_tableau.csv'** on this repository, by adding the forecasted data. By connecting this dataset in Tableau, I got this better visualization for the forecasts:
 
 ![real_sales forecast](https://user-images.githubusercontent.com/4992938/36238841-50578a22-11ec-11e8-81db-b2effaa7c7a7.png)
 
