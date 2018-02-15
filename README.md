@@ -2,7 +2,7 @@
 Data Challenge for job opportunity
 
 ## 1st step - Parse and Extract the data
-The given file **[sample.txt](sample.txt)** was opened in Tableau (before opening this dataset, I renamed it to **[sample 2.json]('sample%202.json')** to ease the Tableau Connect process). The Tableau file is **'TOTVS.twb'** on this repository.
+The given file **[sample.txt](sample.txt)** was opened in Tableau (before opening this dataset, I renamed it to **[sample 2.json]('sample%202.json')** to ease the Tableau Connect process). The Tableau file is **[TOTVS.twb](TOTVS.twb)** on this repository.
 
 Since the purpose of this challenge is identify pattern on how much a customer spend on the restaurant and also calculate a sales forecast for the following week, I cleaned the data so that I remain only with the main data below:
 
@@ -27,15 +27,15 @@ From this analysis, we can predict how a customer will spend according to the we
 ## 3rd step - Calculate a sales forecast for the next week
 For this step, I exported only the sales per day, and also the corresponding weekdays. Because we already found out that there is a strong correlation between sales and weekday, both data need to be used on our forecast model.
 
-So I generated a clean dataset from Tableau, to be used on Python, with only those 2 columns. This is the file **'real_sales.csv'** on this repository.
+So I generated a clean dataset from Tableau, to be used on Python, with only those 2 columns. This is the file **[real_sales.csv](real_sales.csv)** on this repository.
 
 The idea is to make a Recurrent Neural Network composed with Long short-term memory (LSTM) units, mostly known as LSTM Network, since this is usually well suited to predict time series.
 
-So, I splited the **'real_sales.csv'** dataset into Train and Test datasets, in aproximately 75% / 25% amount of data respectively. The splited datasets are found as **'real_sales_train.csv'** and **'real_sales_test.csv'** on this repository.
+So, I splited the **[real_sales.csv](real_sales.csv)** dataset into Train and Test datasets, in aproximately 75% / 25% amount of data respectively. The splited datasets are found as **[real_sales_train.csv](real_sales_train.csv)** and **[real_sales_test.csv](real_sales_test.csv)** on this repository.
 
 Now we have the Train and Test datasets for our LSTM Network and we can move forward to our forecast model.
 
-In the model flie **'tovs-challenge.py'** on this repository, I make this model. Basically, these are the steps I took:
+In the model flie **[tovs-challenge.py](tovs-challenge.py)** on this repository, I make this model. Basically, these are the steps I took:
 
 - Imported the Training Set
 - Applied a Feature Scaling to standardize the features of data. 
@@ -55,7 +55,7 @@ In the model flie **'tovs-challenge.py'** on this repository, I make this model.
 
 ### How amazing is that?
 
-- From these results, I generated a new dataset back to Tableau, the given file **'solucao_tableau.csv'** on this repository, by adding the forecasted data. By connecting this dataset in Tableau, I got this better visualization for the forecasts:
+- From these results, I generated a new dataset back to Tableau, the given file **[solucao_tableau.csv](solucao_tableau.csv)** on this repository, by adding the forecasted data. By connecting this dataset in Tableau, I got this better visualization for the forecasts:
 
 ![real_sales forecast](https://user-images.githubusercontent.com/4992938/36238841-50578a22-11ec-11e8-81db-b2effaa7c7a7.png)
 
